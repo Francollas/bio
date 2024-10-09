@@ -32,18 +32,25 @@
             font-size: 24px;
             font-weight: bold;
         }
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: var(--text-color);
-        }
-        .theme-toggle {
-            background: none;
-            border: 1px solid var(--text-color);
-            color: var(--text-color);
-            padding: 5px 10px;
-            cursor: pointer;
-        }
+        nav {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+nav a {
+    margin-left: 20px; /* Margem à esquerda dos links */
+    margin-right: 20px; /* Margem à direita dos links */
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px; /* Tamanho de fonte maior para melhor legibilidade */
+}
+
+.theme-toggle {
+    margin-left: 20px; /* Espaçamento para o botão de mudar tema */
+}
+
+        
         .hero {
             display: flex;
             align-items: center;
@@ -59,7 +66,7 @@
             perspective: 1000px;
         }
         .hero-image img {
-            max-width: 80%;
+            max-width: 50%;
             border-radius: 50%;
             transition: transform 0.3s;
         }
@@ -196,7 +203,7 @@ footer a:hover {
 <body>
     <div class="container">
         <header>
-            <div class="logo">FRANCOLAS</div>
+            <div class="logo">FRANCO JR</div>
             <nav>
                 <a href="#sobre">Sobre</a>
                 <a href="#projetos">Skills</a>
@@ -206,8 +213,12 @@ footer a:hover {
         </header>
 
         <section class="hero">
+            
             <div class="hero-text">
                 <h1>Web Developer Full Stack</h1>
+                <div class="hero-image">
+                    <img src="./images/my pic.png" alt="Sua foto de perfil">
+                </div>
                 <p>Criando experiências web inovadoras e eficientes com:</p>
                 <div class="skills-carousel">
                     <div class="skill-item">HTML</div>
@@ -228,9 +239,7 @@ footer a:hover {
                     <div class="skill-item">Final Cut Pro</div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="./images/my pic.png" alt="Sua foto de perfil">
-            </div>
+            
         </section>
 
         <section id="sobre">
